@@ -318,6 +318,7 @@ h1 {
 .copy-block p,
 .section-heading p,
 .contact-card p,
+.experience-entry p,
 .feature-card p,
 .process-grid p,
 .competency-grid p,
@@ -397,8 +398,51 @@ h1 {
   font-weight: 800;
 }
 
-.feature-section {
+.feature-section,
+.experience-section {
   padding-top: 48px;
+}
+
+.experience-stack {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.experience-entry {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.45fr) minmax(0, 1fr);
+  gap: clamp(1.4rem, 4vw, 2.5rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 14px 42px rgba(39, 37, 34, 0.06);
+  padding: clamp(1.25rem, 4vw, 2rem);
+}
+
+.experience-entry-header h3,
+.experience-entry-body h2 {
+  margin-bottom: 0.65rem;
+  letter-spacing: 0;
+}
+
+.experience-entry-header h3 {
+  font-size: 1.15rem;
+  line-height: 1.25;
+}
+
+.experience-entry-header p,
+.experience-entry-body > p {
+  margin-bottom: 0;
+}
+
+.experience-entry-body h2 {
+  font-size: clamp(1.8rem, 4vw, 3.1rem);
+  line-height: 1.04;
+}
+
+.experience-entry-body > p + .feature-grid,
+.experience-entry-body > p + .stacked-list {
+  margin-top: 1.8rem;
 }
 
 .feature-grid {
@@ -763,6 +807,7 @@ h1 {
   .split-section,
   .split-section.reverse,
   .section-heading,
+  .experience-entry,
   .project-card,
   .contact-card {
     grid-template-columns: 1fr;
