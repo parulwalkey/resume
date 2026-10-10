@@ -1268,3 +1268,51 @@ h1 {
     flex-direction: column;
   }
 }
+
+/* Connected experience and education milestones. */
+.journey-heading { text-align: center; max-width: 720px; margin: 0 auto 3.5rem; }
+.journey-heading .section-kicker { margin-inline: auto; }
+.journey-heading h2 { font-size: var(--font-2xl); line-height: 1.15; margin: 0 0 1rem; }
+.journey-heading > p:last-child { color: var(--text-secondary); margin: 0; }
+.journey-line { position: relative; margin: 0; padding: 0; list-style: none; display: grid; gap: 2.5rem; }
+.journey-line::before { content: ""; position: absolute; width: 2px; background: var(--border-strong); top: 0; bottom: 0; left: calc(50% - 1px); }
+.journey-milestone { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 48px minmax(0, 1fr); align-items: center; }
+.journey-date { grid-column: 1; grid-row: 1; text-align: right; padding-right: .35rem; }
+.journey-date > span { display: inline-block; border: 1px solid var(--border); border-radius: 999px; padding: .4rem .85rem; background: var(--card); font-size: var(--font-sm); font-weight: 600; }
+.journey-date p { color: var(--text-muted); font-size: var(--font-xs); text-transform: uppercase; letter-spacing: .06em; margin: .6rem 0 0; }
+.journey-dot { grid-column: 2; grid-row: 1; align-self: center; justify-self: center; margin-top: 0; width: 12px; height: 12px; border-radius: 50%; background: var(--accent-primary); border: 3px solid var(--bg); box-shadow: 0 0 0 2px var(--border-strong); z-index: 1; }
+.journey-card { position: relative; grid-column: 3; grid-row: 1; min-width: 0; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); padding: var(--card-padding); box-shadow: var(--shadow); transition: border-color 160ms ease, background 160ms ease; }
+.journey-card:hover { border-color: var(--border-strong); background: var(--card-hover); }
+.journey-current .journey-card { border-color: var(--border-strong); background: var(--bg-secondary); }
+.journey-milestone:nth-child(even) .journey-card { grid-column: 1; }
+.journey-milestone:nth-child(even) .journey-date { grid-column: 3; text-align: left; padding: 0 0 0 .35rem; }
+.journey-card-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: .75rem; }
+.journey-card h3 { margin: 0; font-size: var(--font-lg); line-height: 1.3; }
+.journey-kind { flex-shrink: 0; border-radius: 999px; padding: .25rem .6rem; color: var(--accent-text); background: var(--accent-soft); font-size: var(--font-xs); font-weight: 600; }
+.journey-milestone:nth-child(even) .journey-kind { background: var(--tag-blue); }
+.journey-organization { color: var(--text-secondary); font-weight: 600; font-size: var(--font-sm); margin: .6rem 0 1.2rem; }
+.journey-contributions { margin: 0 0 1.25rem; padding-left: 1.15rem; color: var(--text-secondary); display: grid; gap: .6rem; }
+.journey-contributions li::marker { color: var(--accent-primary); }
+.journey-tags { display: flex; flex-wrap: wrap; gap: .4rem; }
+.journey-tags span { font-size: var(--font-xs); border: 1px solid var(--border); border-radius: 999px; padding: .25rem .6rem; color: var(--text-secondary); background: var(--bg); }
+.journey-details { border-top: 1px solid var(--border); margin-top: 1.25rem; padding-top: .8rem; font-size: var(--font-sm); color: var(--text-secondary); }
+.journey-details summary { cursor: pointer; color: var(--accent-text); font-weight: 600; width: fit-content; }
+.journey-details li { margin-bottom: .75rem; }
+.journey-anchor { position: absolute; top: 0; scroll-margin-top: 9rem; }
+@media (max-width: 760px) {
+ .journey-line { gap: 2rem; }
+ .journey-line::before { left: 9px; }
+ .journey-milestone { grid-template-columns: 20px minmax(0, 1fr); gap: .75rem; align-items: start; }
+ .journey-dot { grid-column: 1; grid-row: 2; margin-top: 0; }
+ .journey-milestone .journey-date, .journey-milestone:nth-child(even) .journey-date { grid-column: 2; grid-row: 1; text-align: left; padding: 0; }
+ .journey-milestone .journey-card, .journey-milestone:nth-child(even) .journey-card { grid-column: 2; grid-row: 2; }
+ .journey-card-heading { flex-direction: column-reverse; gap: .6rem; }
+ .journey-heading { margin-bottom: 2rem; }
+}
+
+/* Align the date pill itself with each card's midpoint. */
+@media (min-width: 761px) {
+ .journey-date { position: relative; }
+ .journey-date p { position: absolute; top: 100%; right: .35rem; margin-top: .6rem; }
+ .journey-milestone:nth-child(even) .journey-date p { right: auto; left: .35rem; }
+}
