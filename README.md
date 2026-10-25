@@ -1,35 +1,42 @@
-# Parul Walkey Portfolio Site
+# Parul Walkey Portfolio
 
-This is a static one-page portfolio site built from `resume_parul.docx`.
+**Technical Project Delivery · AI Implementation · Product Operations**
 
-## Hosting Decision
+Parul Walkey's portfolio brings together technical project coordination, AI-enabled product work, product discovery, and cross-functional execution. Industrial operations, supply chain, SAP/ERP, and analytics provide supporting domain expertise.
 
-Yes, this can be hosted on GitHub Pages or any free static host because it only uses:
+[Visit the portfolio](https://parulwalkey.github.io/resume/) · [Download the resume](assets/resume/Parul_Walkey_Resume.pdf)
 
-- `index.html`
-- `styles.css`
-- local SVG assets in `assets/`
+## Credentials
 
-No backend, database, build step, paid Gamma account, or server runtime is required.
+- **Certified Associate in Project Management (CAPM)®** — Project Management Institute (PMI), earned October 2026. [Verify credential on Credly](https://www.credly.com/badges/e8bd185b-4558-4ca3-914c-683b46bb1f6a/public_url).
+- Google Project Management Certificate
+- Lean Six Sigma Green Belt — CSSC
+- Google AI Essentials
 
-## Free Hosting Options
+## Portfolio And Projects
 
-- GitHub Pages: best fit for a simple resume portfolio.
-- Netlify: drag-and-drop or Git-based deploys.
-- Vercel: Git-based deploys with a free hobby tier.
-- Cloudflare Pages: fast static hosting with a free tier.
+The responsive portfolio includes a floral hero, Experience & Education Journey timeline, six-project carousel, skills, About, certifications, and contact links.
 
-## GitHub Pages Setup
+- [Supplier Intelligence Copilot](case-studies/supplier-intelligence-copilot.html): a working AI-assisted supplier-risk prototype, evolved from a SQL/Tableau analytics foundation, with deterministic metrics and human review.
+- [MyEdMaster — AI Product Delivery](case-studies/myedmaster.html): professional delivery coordination from prototype toward product readiness; internal artifacts remain confidential.
+- [AnnieGuard — Healthcare Product Discovery](case-studies/annieguard.html): customer discovery, prioritization, and venture delivery for a healthcare concept.
+- [ChatGPT Projects — Product Teardown](case-studies/chatgpt-projects.html): an independent product analysis and concept proposal, not a shipped feature.
+- [Airbnb Rental Decision Support](https://github.com/parulwalkey/airbnb-rental-decision-support): collaborative Power BI analytics for Host and Traveler workflows.
+- [ClinicalIQ](https://public.tableau.com/views/ClinicalIQ/Overview): collaborative clinical-trial analytics in Tableau.
 
-1. Create a new GitHub repository.
-2. Upload `index.html`, `styles.css`, `.gitignore`, and the `assets/` folder to the repository root.
-3. In GitHub, go to Settings > Pages.
-4. Set Source to `Deploy from a branch`.
-5. Select the `main` branch and `/root`.
-6. Save. GitHub will publish the site at `https://<username>.github.io/<repo-name>/`.
+## Files
 
-## Local Preview
+- `index.html`: homepage content, Journey, project carousel, and certifications.
+- `styles.css`: Bordeaux-and-cream styling and responsive layouts.
+- `scripts/portfolio.js`: accessible carousel controls and sticky-header anchor alignment.
+- `case-studies/`: published project and delivery overviews.
+- `assets/`: floral backgrounds, SVG illustrations, and the official CAPM badge image retrieved from Credly.
+- `assets/resume/Parul_Walkey_Resume.pdf`: the supplied resume, stored without content changes.
 
-Open `index.html` directly in a browser.
+## Hosting And Local Preview
 
-The generated screenshot files are local QA artifacts and are ignored by `.gitignore`.
+The site remains a static GitHub Pages site published from `main` at the repository root. There is no React/Vercel migration, backend, database, build step, or server runtime required for hosting.
+
+For a local preview, run `python3 -m http.server 8000` in the repository root and open <http://localhost:8000/>. Keep `scripts/`, `case-studies/`, and `assets/` alongside the root HTML and CSS when serving or publishing the site.
+
+Local QA screenshots are not part of the published portfolio.

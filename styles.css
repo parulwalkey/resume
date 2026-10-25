@@ -1479,6 +1479,10 @@ html { scroll-padding-top: var(--header-height); }
 #about .copy-block p { font-size: .95rem; line-height: 1.65; margin-bottom: .9rem; }
 .education-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .education-grid p { font-size: .9rem; margin-bottom: 0; }
+.capm-credential .credential-status { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: .9rem; }
+.capm-credential .credential-status span { margin: 0; }
+.capm-credential .credential-badge { width: 80px; height: 80px; flex: 0 0 80px; object-fit: cover; }
+.capm-credential .credential-verification { display: inline-block; margin-top: .9rem; }
 .case-main { max-width: 860px; margin: 0 auto; padding: 2.5rem 24px 4rem; }
 .case-header { padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
 .case-header h1 { font: 400 3rem/1.1 var(--font-editorial); color: var(--accent-primary); margin: 1rem 0; letter-spacing: 0; }
