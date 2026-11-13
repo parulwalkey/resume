@@ -24,9 +24,6 @@ The responsive portfolio includes a floral hero, Experience & Education Journey 
 - [Airbnb Rental Decision Support](https://github.com/parulwalkey/airbnb-rental-decision-support): collaborative Power BI analytics for Host and Traveler workflows.
 - [ClinicalIQ](https://public.tableau.com/views/ClinicalIQ/Overview): collaborative clinical-trial analytics in Tableau.
 
-The carousel follows the project order above, with Lean Six Sigma in position 02. MyEdMaster remains in the Experience & Education Journey; its [delivery overview](case-studies/myedmaster.html) is retained.
-
-The Lean Six Sigma card links to the downloadable PDF. Its project repository is private, and the standalone website has not been deployed, so the card includes neither a repository button nor a website button. A comment in `index.html` identifies where to add a deployed website link later.
 
 ## Files
 
