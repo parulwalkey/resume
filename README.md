@@ -18,11 +18,15 @@ Parul Walkey's portfolio brings together technical project coordination, AI-enab
 The responsive portfolio includes a floral hero, Experience & Education Journey timeline, six-project carousel, skills, About, certifications, and contact links.
 
 - [Supplier Intelligence Copilot](case-studies/supplier-intelligence-copilot.html): a working AI-assisted supplier-risk prototype, evolved from a SQL/Tableau analytics foundation, with deterministic metrics and human review.
-- [MyEdMaster — AI Product Delivery](case-studies/myedmaster.html): professional delivery coordination from prototype toward product readiness; internal artifacts remain confidential.
+- [Lean Six Sigma Project — Supplier Quality & Manufacturing Downtime](assets/case-studies/Supplier_Quality_DMAIC_Case_Study.pdf): a historical DMAIC analysis of 6,145 supplier-quality records across 24 manufacturing plants. Pareto analysis found that 22 supplier IDs account for 80.2% of recorded downtime. The study includes root-cause hypotheses, a preliminary FMEA, and a proposed improvement pilot and control plan; no achieved downtime reduction or savings is claimed.
 - [AnnieGuard — Healthcare Product Discovery](case-studies/annieguard.html): customer discovery, prioritization, and venture delivery for a healthcare concept.
 - [ChatGPT Projects — Product Teardown](case-studies/chatgpt-projects.html): an independent product analysis and concept proposal, not a shipped feature.
 - [Airbnb Rental Decision Support](https://github.com/parulwalkey/airbnb-rental-decision-support): collaborative Power BI analytics for Host and Traveler workflows.
 - [ClinicalIQ](https://public.tableau.com/views/ClinicalIQ/Overview): collaborative clinical-trial analytics in Tableau.
+
+The carousel follows the project order above, with Lean Six Sigma in position 02. MyEdMaster remains in the Experience & Education Journey; its [delivery overview](case-studies/myedmaster.html) is retained.
+
+The Lean Six Sigma card links to the downloadable PDF. Its project repository is private, and the standalone website has not been deployed, so the card includes neither a repository button nor a website button. A comment in `index.html` identifies where to add a deployed website link later.
 
 ## Files
 
@@ -32,6 +36,7 @@ The responsive portfolio includes a floral hero, Experience & Education Journey 
 - `case-studies/`: published project and delivery overviews.
 - `assets/`: floral backgrounds, SVG illustrations, and the official CAPM badge image retrieved from Credly.
 - `assets/resume/Parul_Walkey_Resume.pdf`: the supplied resume, stored without content changes.
+- `assets/case-studies/Supplier_Quality_DMAIC_Case_Study.pdf`: the supplied Lean Six Sigma case study, stored without content changes.
 
 ## Hosting And Local Preview
 
