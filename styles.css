@@ -1169,11 +1169,20 @@ body { background: var(--bg); -webkit-font-smoothing: antialiased; }
  .contact-actions { flex-wrap: wrap; }
 }
 
-/* Compact editorial sections; content can always grow beyond the viewport. */
+/* Homepage sections fill the space below the sticky header and grow with their content. */
 :root { --header-height: 73px; --section-inset: 28px; }
 html { scroll-padding-top: var(--header-height); }
-.section.viewport-section, .flagship-section { padding-block: var(--section-inset); }
-.viewport-section { min-height: calc(100svh - var(--header-height)); display: flex; flex-direction: column; justify-content: center; }
+.portfolio-main > section {
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100dvh - var(--header-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-main > .section {
+  padding-block: var(--section-inset);
+}
 .section-heading { margin-bottom: 1.5rem; }
 .section-heading > .section-kicker { margin-bottom: 1rem; }
 .section-heading h2 { margin-bottom: .65rem; }
@@ -1246,14 +1255,13 @@ html { scroll-padding-top: var(--header-height); }
  .project-track { grid-auto-columns: calc((100% - 16px) / 2); }
 }
 @media (max-width: 980px) {
- :root { --header-height: 104px; --section-inset: 28px; }
+ :root { --header-height: 104px; }
  .project-track { grid-auto-columns: calc((100% - 16px) / 2); }
  #about { gap: 1.5rem; grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr); }
  .flagship-intro { display: block; }
  .flagship-intro > p { margin-bottom: 1rem; }
 }
 @media (max-width: 680px) {
- .viewport-section { min-height: auto; }
  .project-track { grid-auto-columns: 100%; }
  .showcase-card { padding: 1.25rem; }
  .competency-grid, .education-grid { grid-template-columns: 1fr; }
