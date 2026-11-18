@@ -15,7 +15,7 @@ Parul Walkey's portfolio brings together technical project coordination, AI-enab
 
 ## Portfolio And Projects
 
-The responsive portfolio includes a floral hero, Experience & Education Journey timeline, six-project carousel, skills, About, certifications, and contact links.
+The responsive portfolio includes an introduction, Experience & Education Journey timeline, six-project carousel, skills, About, certifications, and contact links.
 
 - [Supplier Intelligence Copilot](case-studies/supplier-intelligence-copilot.html): a working AI-assisted supplier-risk prototype, evolved from a SQL/Tableau analytics foundation, with deterministic metrics and human review.
 - [Lean Six Sigma Project — Supplier Quality & Manufacturing Downtime](assets/case-studies/Supplier_Quality_DMAIC_Case_Study.pdf): a historical DMAIC analysis of 6,145 supplier-quality records across 24 manufacturing plants. Pareto analysis found that 22 supplier IDs account for 80.2% of recorded downtime. The study includes root-cause hypotheses, a preliminary FMEA, and a proposed improvement pilot and control plan; no achieved downtime reduction or savings is claimed.
@@ -31,7 +31,7 @@ The responsive portfolio includes a floral hero, Experience & Education Journey 
 - `styles.css`: Bordeaux-and-cream styling and responsive layouts.
 - `scripts/portfolio.js`: accessible carousel controls and sticky-header anchor alignment.
 - `case-studies/`: published project and delivery overviews.
-- `assets/`: floral backgrounds, SVG illustrations, and the official CAPM badge image retrieved from Credly.
+- `assets/`: SVG illustrations, and the official CAPM badge image retrieved from Credly.
 - `assets/resume/Parul_Walkey_Resume.pdf`: the supplied resume, stored without content changes.
 - `assets/case-studies/Supplier_Quality_DMAIC_Case_Study.pdf`: the supplied Lean Six Sigma case study, stored without content changes.
 
